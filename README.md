@@ -2,8 +2,8 @@
 # Biblioteca por medio de ISBN  
 
 Integrantes:
-- Sabrina Andrea Lopez López
-- Martín Gabriel Carrasco Inostroza
+- Sabrina López
+- Martín Carrasco 
 - Grupo: 8
 
 # Objetivo: 

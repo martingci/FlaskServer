@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Actualizar libro</title>
+</head>
+<body>
+  <h1>Actualizar información de un libro</h1>
+  <form action="/update" method="post">
+    ISBN: <input type="text" name="isbn" required><br>
+    Titulo: <input type="text" name="title" required><br>
+    Autor: <input type="text" name="author" required><br>
+    Año: <input type="text" name="year" required><br>
+    Páginas totales: <input type="number" name="pages" required><br>
+    Páginas leídas: <input type="number" name="done" required><br>
+    Comentarios: <input type="text" name="comments"><br>
+    <input type="submit" value="Actualizar datos">
+  </form>
+  <a href="/">Volver al inicio</a>
+</body>
+</html>

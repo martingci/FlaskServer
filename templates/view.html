@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ver inventario</title>
+</head>
+<body>
+  <h1>Registro de libros</h1>
+  <table border="1">
+    <tr>
+      <th>ISBN</th>
+      <th>Titulo</th>
+      <th>Autor</th>
+      <th>Año</th>
+      <th>Páginas totales</th>
+      <th>Páginas leídas</th>
+      <th>Progreso</th>
+      <th>Comentarios</th>
+    </tr>
+    {% for isbn, book in inventory.items() %}
+    <tr>
+      <td>{{ isbn }}</td>
+      <td>{{ book.Title }}</td>
+      <td>{{ book.Author }}</td>
+      <td>{{ book.Year }}</td>
+      <td>{{ book.Pages }}</td>
+      <td>{{ book.Done }}</td>
+      <td>{{ book.Progress }}%</td>
+      <td>{{ book.Comments }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <a href="/">Volver al inicio</a>
+</body>
+</html>

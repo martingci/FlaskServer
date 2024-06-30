@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Buscar libro</title>
+</head>
+<body>
+  <h1>Buscar libro</h1>
+  <form action="/search" method="post">
+    ISBN: <input type="text" name="isbn" required><br>
+    <input type="submit" value="Buscar libro">
+  </form>
+  {% if book %}
+    <h2>Detalles de libro</h2>
+    <p>Titulo: {{ book.Title }}</p>
+    <p>Autor: {{ book.Author }}</p>
+    <p>Año: {{ book.Year }}</p>
+    <p>Páginas totales: {{ book.Pages }}</p>
+    <p>Páginas leídas: {{ book.Done }}</p>
+    <p>Progreso: {{ book.Progress }}%</p>
+    <p>Comentarios: {{ book.Comments }}</p>
+  {% endif %}
+  <a href="/">Volver al inicio</a>
+</body>
+</html>
